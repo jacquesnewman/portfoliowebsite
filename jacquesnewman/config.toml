@@ -1,0 +1,293 @@
+# Site settings
+baseurl = "http://jacquesnewman.com/"
+languageCode = "en-us"
+title = "Jacques Newman"
+theme = "hugo-agency-theme"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = ""
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Jacques Newman"
+  description = "Student studying for a BSCS in Real Time Interactive Simulation at DigiPen Institute of Technology"
+
+  # Since this template is static, the contact form uses www.formspree.io as a
+  # proxy. The form makes a POST request to their servers to send the actual
+  # email. Visitors can send up to a 1000 emails each month for free.
+  #
+  # What you need to do for the setup?
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email yourself to confirm your account
+  # - click the confirm link in the email from www.formspree.io
+  # - you're done. Happy mailing!
+  email = "your@email.com"
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+#  URL = "https://stats.example.com"
+#  ID = "42"
+#  # Track all subdomains with "*.example.com"
+#  domain = "www.example.com"
+#  # Optional integrity check hash
+#  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "Jacques Newman"
+    services = "Skills"
+    portfolio = "Portfolio"
+    about = "About"
+    team = "Contact"
+    contact = "Contact"
+
+    # Add custom links. Those can be pre- and postpended to the default menu above.
+    # Use the weight attribute to order your custom links. Uncomment the example
+    # below and replace the values with your own.
+
+    # prepended links
+#    [[menu.prepend]]
+#      url = "http://gohugo.io"
+#      name = "Hugo"
+#      weight = 10
+
+#    # postpended links
+#    [[menu.postpend]]
+#      url = "http://gohugo.io"
+#      name = "External link"
+#      weight = 10
+
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = ""
+    subtitle = ""
+    buttonText = "Tell me more"
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "Skills"
+    subtitle = "" 
+    [[params.services.row]]
+
+      [[params.services.row.list]]
+        icon = "fa-code"
+        title = "Languages"
+        description = "\
+        C++<br>\
+        C#<br>\
+        C<br>\
+        Lua<br>\
+        Java<br>\
+        HLSL (familiar)<br>\
+        GLSL (familiar)<br>\
+        Python (familiar)<br>"
+        
+
+      [[params.services.row.list]]
+        icon = "fa-book"
+        title = "Libraries"
+        description =  "\
+        Dear ImGui<br>\
+        UnityEditor<br>\
+        LuaBridge<br>\
+        Lua C API (familiar)<br>\
+        DirectX11 (familiar)<br>\
+        OpenGL (familiar)<br>"
+      [[params.services.row.list]]
+        icon = "fa-desktop"
+        title = "Development Tools"
+        description = "\
+        Visual Studio 2012-2015<br>\
+        Unity3D<br>\
+        IntelliJ IDEA<br>\
+        Microsoft Windows 7, 10<br>\
+        Linux Terminal (comfortable)<br>"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Student Projects at DigiPen"
+
+    [params.portfolio.modal]
+     client = "Download Link"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close project"
+
+
+    # About section
+   [params.about]
+    enable = true
+    title = "About"
+    subtitle = ""
+    endpoint = "Graduate<br>from DigiPen<br>April 2017"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      img = "dp.jpg"
+      date = "Fall 2013"
+      title = "Began Studies at DigiPen"
+      description = "" 
+    [[params.about.events]]
+      img = "mekik.png"
+      date = "December 2013"
+      title = "MEKik Completed"
+      description = "" 
+    [[params.about.events]]
+      img = "Lineage.png"
+      date = "July 2014 - April 2015"
+      title = "Lineage in Development"
+      description = "" 
+    [[params.about.events]]
+      img = "Chrono-Drive.png"
+      date = "April 2015 - April 2016"
+      title = "Chrono-Drive in Development"
+      description = ""
+    [[params.about.events]]
+      img = "HeartbeatHeroLogo.png"
+      date = "July 2016 - Present"
+      title = "Heartbeat Hero in Development"
+      description = ""
+
+
+
+  # Team section
+  [params.team]
+    enable = true
+    title = ""
+    subtitle = ""
+    description = ""
+ 
+    # All team member's pictures are stored under 'static/img/team'.
+    # Replace them with your own too.
+    [[params.team.members]]
+      img = "jacques.jpg"
+      name = "Jacques Newman"
+      position = "[_Resume_](JacquesNewmanResume.pdf)"
+      social = [
+        ["fa-linkedin", "https://www.linkedin.com/in/jacques-newman-48804b106"],
+        ["fa-github", "https://github.com/jacquesnewman"]
+      ]
+ 
+#    [[params.team.members]]
+#      img = "2.jpg"
+#      name = "Larry Parker"
+#      position = "Lead Marketer"
+#      social = [
+#        ["fa-twitter", "#"],
+#        ["fa-facebook", "#"],
+#        ["fa-linkedin", "#"]
+#      ]
+#
+#    [[params.team.members]]
+#      img = "3.jpg"
+#      name = "Diana Pertersen"
+#      position = "Lead Developer"
+#      social = [
+#        ["fa-twitter", "#"],
+#        ["fa-facebook", "#"],
+#        ["fa-linkedin", "#"]
+#      ]
+#
+#  # Client section
+#    [params.clients_list]
+#      enable = true
+#
+#      # All the clients' logos are stored under 'static/img/logos'.
+#      # Replace them with your clients's logos.
+#      [[params.clients]]
+#        logo = "envato.jpg"
+#        link = "#"
+#
+#      [[params.clients]]
+#        logo = "designmodo.jpg"
+#        link = "#"
+#
+#      [[params.clients]]
+#        logo = "themeforest.jpg"
+#        link = "#"
+#
+#      [[params.clients]]
+#        logo = "creative-market.jpg"
+#        link = "#"
+#
+#
+#  # Contact section
+#  [params.contact]
+#    enable = true
+#    title = "Contact us"
+#    subtitle  = "Lorem ipsum dolor sit amet consectetur."
+#    buttonText = "Send message"
+#
+#    # 'warning' defines error messages for invalid inputs
+#    [params.contact.form.name]
+#      text = "Your Name *"
+#      warning = "Please enter your name."
+#
+#    [params.contact.form.email]
+#      text = "Your Email *"
+#      warning = "Please enter your email address."
+#
+#    [params.contact.form.phone]
+#      text = "Your Phone *"
+#      warning = "Please enter your phone number."
+#
+#    [params.contact.form.message]
+#      text = "Your Message *"
+#      warning = "Please enter a message."
+
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+#
+#    [[params.footer.social]]
+#      icon = "fa-twitter"
+#      link = "#"
+#
+#    [[params.footer.social]]
+#      icon = "fa-facebook"
+#      link = "#"
+#    
+#    [[params.footer.social]]
+#      icon = "fa-linkedin"
+#      link = "#"
+#
+#    [[params.footer.quicklinks]]
+#      text = "Privacy Policy"
+#      link = "#"
+#
+#    [[params.footer.quicklinks]]
+#      text = "Terms of Use"
+#      link = "#"
