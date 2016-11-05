@@ -148,7 +148,7 @@ googleAnalytics = ""
     enable = true
     title = "About"
     subtitle = ""
-    endpoint = "Graduate<br>from DigiPen<br>April 2017"
+    endpoint = "Graduate<br>April 2017"
 
     # The events will be listed from the top to the bottom.
     # All images are stored under 'static/img/about'.
